@@ -4,6 +4,8 @@ window.PORTFOLIO_CONTENT = {
   avatar: "assets/profile.jpeg",
   email: "19913626509@henu.edu.cn",
   qq: "2775924927",
+  roles: "undergraduate · researcher · developer",
+  keywords: ["检索增强生成（RAG）", "大模型系统", "多模态学习", "智能体协作"],
   intro: "我关注 RAG、大模型系统与多模态研究，也在持续实践中学习如何把复杂问题变成可靠、可复用的开源成果。",
   about: "我是辛凯，河南大学计算机科学与技术专业学生。我的实践围绕 RAG、大模型微调、多模态建模和智能体协作展开，希望通过清晰的代码、完整的实验与开放交流，让研究成果更容易被理解和继续构建。",
   facts: [

@@ -1,10 +1,15 @@
-# Open Source Contributor Portfolio
+# Kai Xin | Academic Portfolio
 
-辛凯的开源协作者个人主页，使用原生 HTML、CSS 和 JavaScript 构建，可直接部署到 GitHub Pages。
+辛凯的个人主页——河南大学计算机科学与技术本科生，学术档案风格（论文式 § 编号、衬线题名、研究兴趣关键词）融合开发者终端元素。使用原生 HTML、CSS 和 JavaScript 构建，支持深色模式，可直接部署到 GitHub Pages。
 
 ## 更新内容
 
-所有个人资料、项目和贡献记录都在 `content.js`。添加贡献时使用以下字段：
+所有个人资料、项目和贡献记录都在 `content.js`。常用字段：
+
+- `roles`：姓名下方的身份标签（如 `undergraduate · researcher · developer`）
+- `keywords`：首页的研究兴趣关键词标签
+
+添加贡献时使用以下字段：
 
 ```js
 {

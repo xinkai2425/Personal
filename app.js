@@ -7,12 +7,21 @@
   });
   document.querySelector("[data-avatar]").src = content.avatar;
   document.querySelector("[data-intro]").textContent = content.intro;
+  document.querySelector("[data-roles]").textContent = content.roles;
   document.querySelector("[data-about]").textContent = content.about;
   document.querySelector("[data-contact-link]").href = `mailto:${content.email}`;
   document.querySelector("[data-contact-email]").textContent = content.email;
   document.querySelector("[data-contact-qq]").textContent = content.qq;
   document.querySelector("[data-name]").textContent = content.name;
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
+
+  const keywords = document.querySelector("[data-keywords]");
+  content.keywords.forEach((item) => {
+    const chip = document.createElement("span");
+    chip.className = "keyword";
+    chip.textContent = item;
+    keywords.appendChild(chip);
+  });
 
   const facts = document.querySelector("[data-facts]");
   content.facts.forEach((item) => {
