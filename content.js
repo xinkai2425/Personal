@@ -45,6 +45,7 @@ window.PORTFOLIO_CONTENT = {
   projects: [
     {
       name: "AI 全流程智能出题及管理综合系统",
+      href: "http://8.136.42.57:5173/",
       period: "2025.09 - 2026.05",
       tags: ["RAG", "大模型", "系统开发"],
       status: "项目负责人及主要开发者",
@@ -59,6 +60,7 @@ window.PORTFOLIO_CONTENT = {
     },
     {
       name: "SPC 自博弈批评算法及医疗领域适配创新研究",
+      href: "https://github.com/xky201225/SPC",
       period: "2025.12 - 2026.06",
       tags: ["Python", "智能体", "大模型"],
       status: "负责人",

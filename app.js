@@ -76,7 +76,7 @@
       <div class="project-head">
         <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
         <div class="project-head-main">
-          <h3>${project.name}</h3>
+          <h3>${project.href ? `<a class="project-link" href="${project.href}" target="_blank" rel="noreferrer">${project.name}</a>` : project.name}</h3>
           <p class="project-summary">${project.summary}</p>
           ${project.award ? `<span class="project-award">${project.award}</span>` : ""}
         </div>
