@@ -56,7 +56,7 @@ nav a:hover, .header-link:hover { color: var(--accent); }
   min-height: calc(100dvh - 76px);
   margin: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  grid-template-columns: minmax(0, 1.48fr) minmax(220px, 0.52fr);
   gap: clamp(48px, 8vw, 120px);
   align-items: center;
   padding: 56px 0 88px;
@@ -108,7 +108,7 @@ nav a:hover, .header-link:hover { color: var(--accent); }
 .terminal-card {
   position: relative;
   z-index: 2;
-  margin: -68px 4% 0 -4%;
+  margin: -56px 6% 0 -6%;
   overflow: hidden;
   background: var(--term-bg);
   border: 1px solid var(--term-line);
@@ -129,20 +129,17 @@ nav a:hover, .header-link:hover { color: var(--accent); }
 .caret { display: inline-block; width: 0.56em; height: 1.05em; vertical-align: -0.15em; background: var(--term-green); animation: blink 1.15s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
-.principles { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.principles { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.principles [data-traits] { display: grid; grid-template-columns: repeat(3, 1fr); }
 .principles p { margin: 0; padding: 24px 4vw; text-align: center; font-weight: 650; }
 .principles p + p { border-left: 1px solid var(--line); }
 .p-idx { margin-right: 12px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent); }
 .section-shell { width: var(--page); margin: auto; padding: clamp(92px, 12vw, 170px) 0; }
 
-.about { display: grid; grid-template-columns: 0.35fr 1.25fr 0.8fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
+.about { display: grid; grid-template-columns: 0.35fr 1.25fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
 .about h2, .section-heading h2, .contribution-intro h2, .contact h2 { font-size: clamp(2.6rem, 5.6vw, 6rem); }
 .about-copy p { max-width: 650px; margin: 38px 0 0; color: var(--muted); font-size: 1.1rem; line-height: 1.9; }
 .about-copy p::first-letter { margin-right: 2px; }
-.profile-facts { margin: 0; border-top: 1px solid var(--ink); }
-.profile-facts div { padding: 20px 0; border-bottom: 1px solid var(--line); }
-.profile-facts dt { color: var(--muted); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; }
-.profile-facts dd { margin: 10px 0 0; font-weight: 650; }
 
 .work { border-top: 1px solid var(--line); }
 .section-heading { display: grid; gap: 22px; margin-bottom: 68px; }
@@ -176,6 +173,39 @@ nav a:hover, .header-link:hover { color: var(--accent); }
 .recognition-row span:first-child { color: var(--accent); }
 .recognition-row strong { font-size: 1.08rem; }
 
+.academics { border-top: 1px solid var(--line); }
+.acad-stats { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr; gap: 1px; background: var(--line); border-top: 1px solid var(--ink); margin-top: 44px; }
+.acad-stat { background: var(--paper); padding: 26px 18px; }
+.acad-stat dt { color: var(--muted); font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; }
+.acad-stat dd { margin: 12px 0 0; font-size: 1.5rem; font-weight: 750; letter-spacing: 0; }
+.acad-stat:last-child dd { font-size: 0.95rem; line-height: 1.4; }
+.courses-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 44px; }
+.course-item { border-top: 1px solid var(--ink); padding-top: 18px; }
+.course-name { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.course-name strong { font-size: 1.05rem; font-weight: 650; }
+.course-name span { font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+.course-bar { height: 6px; margin-top: 14px; background: var(--accent-soft); border-radius: 3px; overflow: hidden; }
+.course-bar span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+
+.skills { border-top: 1px solid var(--line); }
+.skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.skill-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--accent-soft); }
+.skill-card h3 { margin: 0; font-size: 1.18rem; }
+.skill-card p { margin: 12px 0 0; color: var(--muted); line-height: 1.6; font-size: 0.92rem; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.skill-tags span { padding: 5px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-family: var(--font-mono); font-size: 0.72rem; }
+
+.project-item { padding: 48px 0; border-bottom: 1px solid var(--line); }
+.project-head { display: grid; grid-template-columns: 70px 1fr auto; gap: 28px; align-items: start; }
+.project-head-main h3 { margin: 0; font-size: clamp(1.7rem, 2.8vw, 3rem); letter-spacing: 0; }
+.project-summary { max-width: 640px; margin: 16px 0 0; color: var(--muted); line-height: 1.7; font-size: 0.98rem; }
+.project-award { display: inline-block; margin-top: 20px; padding: 7px 14px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-family: var(--font-mono); font-size: 0.76rem; }
+.project-meta { display: grid; justify-items: end; align-content: start; gap: 10px; color: var(--muted); font-family: var(--font-mono); font-size: 0.76rem; }
+.project-meta span:first-child { color: var(--ink); }
+.project-points { list-style: none; margin: 30px 0 0; padding: 26px 0 0; border-top: 1px solid var(--line); display: grid; gap: 14px; }
+.project-points li { position: relative; padding-left: 24px; color: var(--muted); line-height: 1.65; font-size: 0.95rem; }
+.project-points li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+
 .contact { border-top: 1px solid var(--ink); }
 .contact h2 { max-width: 1000px; margin-top: 28px; }
 .contact-details { max-width: 760px; margin-top: 64px; border-top: 1px solid var(--ink); }
@@ -187,6 +217,30 @@ a.contact-row:hover strong { color: var(--accent); }
 a.contact-row:hover .contact-arrow { transform: translate(3px, -3px); }
 footer { width: var(--page); margin: auto; padding: 28px 0 38px; display: flex; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.8rem; }
 .footer-exit { font-family: var(--font-mono); }
+
+.back-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 30;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.back-top.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.back-top:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.back-top:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.75, 0.2, 1); }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -201,9 +255,14 @@ footer { width: var(--page); margin: auto; padding: 28px 0 38px; display: flex; 
   .terminal-card { margin: -56px 0 0; }
   .about { grid-template-columns: 1fr; }
   .about .section-marker { margin-bottom: 12px; }
-  .profile-facts { margin-top: 22px; }
   .contributions { grid-template-columns: 1fr; }
   .contribution-intro { position: static; }
+  .acad-stats { grid-template-columns: repeat(2, 1fr); }
+  .acad-stat:last-child { grid-column: 1 / -1; }
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-head { grid-template-columns: 70px 1fr; }
+  .project-meta { grid-column: 2; justify-items: start; }
 }
 
 @media (max-width: 600px) {
@@ -215,9 +274,21 @@ footer { width: var(--page); margin: auto; padding: 28px 0 38px; display: flex; 
   .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
   .portrait-frame { aspect-ratio: 4 / 5; }
   .terminal-body { font-size: 0.72rem; padding: 14px; }
-  .principles { grid-template-columns: 1fr; }
+  .principles [data-traits] { grid-template-columns: 1fr; }
   .principles p + p { border-left: 0; border-top: 1px solid var(--line); }
   .section-shell { padding: 84px 0; }
+  .acad-stats { grid-template-columns: repeat(2, 1fr); }
+  .acad-stat { padding: 18px 12px; }
+  .acad-stat dd { font-size: 1.15rem; }
+  .acad-stat:last-child { grid-column: 1 / -1; }
+  .acad-stat:last-child dd { font-size: 1rem; }
+  .courses-grid { grid-template-columns: 1fr; }
+  .skill-grid { grid-template-columns: 1fr; }
+  .skill-card { padding: 22px; }
+  .project-head { grid-template-columns: 42px 1fr; gap: 12px; }
+  .project-meta { display: none; }
+  .project-head-main h3 { font-size: 1.55rem; }
+  .project-points li { font-size: 0.9rem; }
   .project-row { grid-template-columns: 42px 1fr 28px; gap: 12px; padding: 26px 0; }
   .project-meta { display: none; }
   .project-main strong { font-size: 1.7rem; }

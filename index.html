@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="辛凯（Kai Xin）的个人主页——河南大学计算机科学与技术本科生，研究兴趣为检索增强生成（RAG）、大模型系统与多模态学习。" />
+    <meta name="description" content="辛凯（Kai Xin）的个人主页——河南大学计算机科学与技术本科生（专业排名 8/105），研究兴趣为检索增强生成（RAG）、大模型系统与多模态学习，主导过 AI 智能出题、SPC 医疗适配、G3 图像地理定位等科研项目。" />
     <meta name="theme-color" content="#f7f5ef" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b4c9b'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23f7f5ef' font-family='monospace'%3EK%3C/text%3E%3C/svg%3E" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="辛凯 Kai Xin | CS Undergraduate" />
     <meta property="og:description" content="河南大学计算机科学与技术本科生，聚焦 RAG、大模型系统与多模态学习。" />
@@ -19,6 +20,8 @@
       <a class="wordmark" href="#top" aria-label="返回首页"><span>~$</span> kx</a>
       <nav aria-label="主导航">
         <a href="#about">关于</a>
+        <a href="#academics">学业</a>
+        <a href="#skills">技能</a>
         <a href="#work">项目</a>
         <a href="#recognition">荣誉</a>
         <a href="#contact">联系</a>
@@ -32,7 +35,7 @@
           <p class="eyebrow">// 河南大学 · 计算机科学与技术 · 本科在读</p>
           <h1 id="hero-title">辛凯<span class="hero-name-en">Kai Xin</span></h1>
           <p class="hero-roles" data-roles>undergraduate · researcher · developer</p>
-          <p class="hero-intro" data-intro>我关注 RAG、大模型系统与多模态研究，也在持续实践中学习如何把复杂问题变成可靠、可复用的开源成果。</p>
+          <p class="hero-intro" data-intro>河南大学计算机科学与技术大四本科生，专业排名前 8%，目前已保研至西北工业大学计算机学院。研究学习涉及检索增强生成（RAG）、大模型应用与智能体的研究与实践，希望用清晰、可复用的开源成果，让复杂问题变得可被理解、可被继续构建。</p>
           <div class="hero-keywords" data-keywords aria-label="研究兴趣"></div>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">查看研究与项目</a>
@@ -50,9 +53,11 @@
               <span class="terminal-title">kain@henu: ~</span>
             </div>
             <pre class="terminal-body"><span class="t-prompt">~$</span> whoami
-<span class="t-out">辛凯 (Kai Xin) · CS 本科生 @ 河南大学</span>
+<span class="t-out">辛凯 (Kai Xin) · CS @ 河南大学</span>
 <span class="t-prompt">~$</span> ls ./research
 <span class="t-dir">rag/  llm-systems/  multimodal/  agents/</span>
+<span class="t-prompt">~$</span> ls ./projects
+<span class="t-dir">ai-exam/  spc-med/  g3-geo/</span>
 <span class="t-prompt">~$</span> git log -1 --oneline
 <span class="t-dim">a3f9c21</span> <span class="t-out">keep learning, keep building</span>
 <span class="t-prompt">~$</span> <span class="caret"></span></pre>
@@ -60,52 +65,64 @@
         </div>
       </section>
 
-      <section class="principles" aria-label="治学原则">
-        <p><span class="p-idx">01</span>从问题出发</p><p><span class="p-idx">02</span>让上下文清晰</p><p><span class="p-idx">03</span>让改进可持续</p>
+      <section class="principles" aria-label="个人特质">
+        <div data-traits></div>
       </section>
 
       <section class="about section-shell" id="about" aria-labelledby="about-title">
         <div class="section-marker">§ 01 / ABOUT</div>
         <div class="about-copy reveal">
           <h2 id="about-title">把学习变成<br />可被他人使用的成果。</h2>
-          <p data-about>我是辛凯，河南大学计算机科学与技术专业学生。我的实践围绕 RAG、大模型微调、多模态建模和智能体协作展开，希望通过清晰的代码、完整的实验与开放交流，让研究成果更容易被理解和继续构建。</p>
+          <p data-about>你好，我是辛凯，很高兴在这里向你介绍我自己。做研究之外，我也注重沟通与协作，习惯把成果整理成可复现、可接手的开源形式。欢迎通过邮箱或 GitHub 与我聊聊。</p>
         </div>
-        <dl class="profile-facts reveal" data-facts></dl>
+      </section>
+
+      <section class="academics section-shell" id="academics" aria-labelledby="academics-title">
+        <div class="section-heading reveal">
+          <div class="section-marker">§ 02 / ACADEMICS</div>
+          <h2 id="academics-title">学业概况</h2>
+        </div>
+        <dl class="acad-stats" data-acad-stats></dl>
+        <div class="courses-grid" data-courses></div>
+      </section>
+
+      <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <div class="section-marker">§ 03 / SKILLS</div>
+          <h2 id="skills-title">技能栈</h2>
+        </div>
+        <div class="skill-grid" data-skills></div>
       </section>
 
       <section class="work section-shell" id="work" aria-labelledby="work-title">
         <div class="section-heading reveal">
-          <div class="section-marker">§ 02 / RESEARCH &amp; PROJECTS</div>
-          <h2 id="work-title">研究与项目</h2>
+          <div class="section-marker">§ 04 / RESEARCH &amp; PROJECTS</div>
+          <h2 id="work-title">科研与项目</h2>
         </div>
         <div class="project-list" data-projects></div>
       </section>
 
-      <section class="contributions section-shell" id="contributions" aria-labelledby="contributions-title">
-        <div class="contribution-intro reveal">
-          <div class="section-marker">§ 03 / APPROACH</div>
-          <h2 id="contributions-title">开放协作，<br />从每一处细节开始。</h2>
-        </div>
-        <div class="contribution-list" data-contributions></div>
-      </section>
-
       <section class="recognition section-shell" id="recognition" aria-labelledby="recognition-title">
         <div class="section-heading reveal">
-          <div class="section-marker">§ 04 / HONORS &amp; AWARDS</div>
+          <div class="section-marker">§ 05 / HONORS &amp; AWARDS</div>
           <h2 id="recognition-title">荣誉与奖项</h2>
         </div>
         <div class="recognition-list" data-recognition></div>
       </section>
 
       <section class="contact section-shell reveal" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">§ 05 / CONTACT — START A CONVERSATION</p>
+        <p class="eyebrow">§ 06 / CONTACT — START A CONVERSATION</p>
         <h2 id="contact-title">一起解决一个<br />值得解决的问题。</h2>
         <div class="contact-details" aria-label="联系方式">
-          <a class="contact-row" data-contact-link href="mailto:19913626509@henu.edu.cn">
+          <a class="contact-row" data-contact-link href="mailto:xinkai_xinkai@163.com">
             <span>邮箱</span>
-            <strong data-contact-email>19913626509@henu.edu.cn</strong>
+            <strong data-contact-email>xinkai_xinkai@163.com</strong>
             <span class="contact-arrow" aria-hidden="true">↗</span>
           </a>
+          <div class="contact-row">
+            <span>电话</span>
+            <strong data-contact-phone>19913626509</strong>
+          </div>
           <a class="contact-row" data-profile-link href="https://github.com/xky201225">
             <span>GitHub</span>
             <strong>github.com/xky201225</strong>
@@ -123,5 +140,9 @@
       <p>© <span data-year></span> <span data-name>辛凯</span> · Kai Xin</p>
       <p class="footer-exit">~$ exit</p>
     </footer>
+
+    <button class="back-top" data-back-top aria-label="回到顶部">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+    </button>
   </body>
 </html>
