@@ -2,7 +2,7 @@ window.PORTFOLIO_CONTENT = {
   name: "辛凯",
   nameEn: "Kai Xin",
   github: "https://github.com/xky201225",
-  avatar: "assets/profile.jpeg",
+  avatar: "assets/person.jpg",
   email: "xinkai_xinkai@163.com",
   phone: "19913626509",
   qq: "2775924927",

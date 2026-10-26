@@ -1,148 +1,151 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="辛凯（Kai Xin）的个人主页——河南大学计算机科学与技术本科生（专业排名 8/105），研究兴趣为检索增强生成（RAG）、大模型系统与多模态学习，主导过 AI 智能出题、SPC 医疗适配、G3 图像地理定位等科研项目。" />
-    <meta name="theme-color" content="#f7f5ef" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b4c9b'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23f7f5ef' font-family='monospace'%3EK%3C/text%3E%3C/svg%3E" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="辛凯 Kai Xin | CS Undergraduate" />
-    <meta property="og:description" content="河南大学计算机科学与技术本科生，聚焦 RAG、大模型系统与多模态学习。" />
-    <title>辛凯 Kai Xin | 计算机科学与技术本科生</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="content.js" defer></script>
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="返回首页"><span>~$</span> kx</a>
-      <nav aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#academics">学业</a>
-        <a href="#skills">技能</a>
-        <a href="#work">项目</a>
-        <a href="#recognition">荣誉</a>
-        <a href="#contact">联系</a>
-      </nav>
-      <a class="header-link" data-profile-link href="https://github.com/xky201225">GitHub ↗</a>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">// 河南大学 · 计算机科学与技术 · 大四本科在读</p>
-          <h1 id="hero-title">辛凯<span class="hero-name-en">Kai Xin</span></h1>
-          <p class="hero-roles" data-roles>undergraduate · researcher · developer</p>
-          <p class="hero-intro" data-intro>河南大学计算机科学与技术大四本科生，专业排名前 8%，目前已保研至西北工业大学计算机学院。研究学习涉及检索增强生成（RAG）、大模型应用与智能体的研究与实践，希望用清晰、可复用的开源成果，让复杂问题变得可被理解、可被继续构建。</p>
-          <div class="hero-keywords" data-keywords aria-label="研究兴趣"></div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">查看研究与项目</a>
-            <a class="button button-secondary" data-profile-link href="https://github.com/xky201225">访问 GitHub</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-label="辛凯的个人照片与终端卡片">
-          <div class="portrait-frame">
-            <img data-avatar src="assets/profile.jpeg" alt="辛凯的个人照片" width="438" height="612" />
-          </div>
-          <div class="terminal-card" aria-hidden="true">
-            <div class="terminal-bar">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="terminal-title">kain@henu: ~</span>
-            </div>
-            <pre class="terminal-body"><span class="t-prompt">~$</span> whoami
-<span class="t-out">辛凯 (Kai Xin) · CS @ 河南大学</span>
-<span class="t-prompt">~$</span> ls ./research
-<span class="t-dir">rag/  llm-systems/  multimodal/  agents/</span>
-<span class="t-prompt">~$</span> ls ./projects
-<span class="t-dir">ai-exam/  spc-med/  g3-geo/</span>
-<span class="t-prompt">~$</span> git log -1 --oneline
-<span class="t-dim">a3f9c21</span> <span class="t-out">keep learning, keep building</span>
-<span class="t-prompt">~$</span> <span class="caret"></span></pre>
-          </div>
-        </div>
-      </section>
-
-      <section class="principles" aria-label="个人特质">
-        <div data-traits></div>
-      </section>
-
-      <section class="about section-shell" id="about" aria-labelledby="about-title">
-        <div class="section-marker">§ 01 / ABOUT</div>
-        <div class="about-copy reveal">
-          <h2 id="about-title">把学习变成<br />可被他人使用的成果。</h2>
-          <p data-about>你好，我是辛凯，很高兴在这里向你介绍我自己。做研究之外，我也注重沟通与协作，习惯把成果整理成可复现、可接手的开源形式。欢迎通过邮箱或 GitHub 与我聊聊。</p>
-        </div>
-      </section>
-
-      <section class="academics section-shell" id="academics" aria-labelledby="academics-title">
-        <div class="section-heading reveal">
-          <div class="section-marker">§ 02 / ACADEMICS</div>
-          <h2 id="academics-title">学业概况</h2>
-        </div>
-        <dl class="acad-stats" data-acad-stats></dl>
-        <div class="courses-grid" data-courses></div>
-      </section>
-
-      <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading reveal">
-          <div class="section-marker">§ 03 / SKILLS</div>
-          <h2 id="skills-title">技能栈</h2>
-        </div>
-        <div class="skill-grid" data-skills></div>
-      </section>
-
-      <section class="work section-shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading reveal">
-          <div class="section-marker">§ 04 / RESEARCH &amp; PROJECTS</div>
-          <h2 id="work-title">科研与项目</h2>
-        </div>
-        <div class="project-list" data-projects></div>
-      </section>
-
-      <section class="recognition section-shell" id="recognition" aria-labelledby="recognition-title">
-        <div class="section-heading reveal">
-          <div class="section-marker">§ 05 / HONORS &amp; AWARDS</div>
-          <h2 id="recognition-title">荣誉与奖项</h2>
-        </div>
-        <div class="recognition-list" data-recognition></div>
-      </section>
-
-      <section class="contact section-shell reveal" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">§ 06 / CONTACT — START A CONVERSATION</p>
-        <h2 id="contact-title">一起解决一个<br />值得解决的问题。</h2>
-        <div class="contact-details" aria-label="联系方式">
-          <a class="contact-row" data-contact-link href="mailto:xinkai_xinkai@163.com">
-            <span>邮箱</span>
-            <strong data-contact-email>xinkai_xinkai@163.com</strong>
-            <span class="contact-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="contact-row">
-            <span>电话</span>
-            <strong data-contact-phone>19913626509</strong>
-          </div>
-          <a class="contact-row" data-profile-link href="https://github.com/xky201225">
-            <span>GitHub</span>
-            <strong>github.com/xky201225</strong>
-            <span class="contact-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="contact-row">
-            <span>QQ</span>
-            <strong data-contact-qq>2775924927</strong>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© <span data-year></span> <span data-name>辛凯</span> · Kai Xin</p>
-      <p class="footer-exit">~$ exit</p>
-    </footer>
-
-    <button class="back-top" data-back-top aria-label="回到顶部">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-    </button>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>辛凯 Kai Xin | 计算机科学与技术本科生</title>
+<link rel="stylesheet" href="styles.css">
+<script src="content.js" defer>
+</script>
+<script src="app.js" defer>
+</script>
+<meta name="description" content="辛凯（Kai Xin）的个人主页——河南大学计算机科学与技术本科生（专业排名 8/105），研究兴趣为检索增强生成（RAG）、大模型系统与多模态学习，主导过 AI 智能出题、SPC 医疗适配、G3 图像地理定位等科研项目。" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="辛凯 Kai Xin | CS Undergraduate" />
+<meta property="og:description" content="河南大学计算机科学与技术本科生，聚焦 RAG、大模型系统与多模态学习。" />
+<meta name="theme-color" content="#eaf6fb">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要内容</a>
+<header>
+<a class="logo" href="#top">
+<span>k</span>辛凯 Kai Xin</a>
+<nav aria-label="主导航">
+<a href="#about">关于我</a>
+<a href="#work">做过的项目</a>
+<a href="#learning">学习记录</a>
+<a href="#contact">联系</a>
+</nav>
+<a class="hello" href="mailto:xinkai_xinkai@163.com">打个招呼</a>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-inner">
+<div>
+<p class="hello-line">河南大学 / 计算机科学与技术</p>
+<h1>你好，我是<span>辛凯。<em>Hi there!</em>
+</span>
+</h1>
+<p class="intro">一名保持好奇、认真动手的计算机系学生。<br>从一页笔记到一个项目，在学习与实践中，<br>把复杂的问题一点点变清楚。</p>
+<div class="actions">
+<a class="button primary" href="#work">看看我的项目</a>
+<a class="button" href="#about">更多关于我</a>
+</div>
+<p class="interest">RAG / 大模型应用 / 多模态学习</p>
+</div>
+<div class="visual">
+<div class="sun" aria-hidden="true">
+</div>
+<svg class="scribble" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" aria-hidden="true">
+<path d="M27 6v18M8 15l15 13M4 36l19-2"/>
+</svg>
+<figure class="portrait">
+<img src="assets/person.jpg" alt="辛凯在自习桌前的照片" width="810" height="1440">
+<figcaption>
+<span>学习中，也在探索中。</span>
+<b>Kai Xin</b>
+</figcaption>
+</figure>
+<span class="note">把好奇心带进每一天</span>
+</div>
+</div>
+</section>
+<div class="stats">
+<div class="lead">认真学习，<br>也认真把想法做出来。</div>
+<div class="stat">
+<strong data-stat="rank">8 / 105</strong>
+<span>专业排名</span>
+</div>
+<div class="stat">
+<strong data-stat="gpa">3.71 / 4.0</strong>
+<span>学业绩点</span>
+</div>
+<div class="stat">
+<strong data-stat="avg">90.48</strong>
+<span>平均成绩</span>
+</div>
+</div>
+<section class="section about" id="about">
+<h2>从校园出发，<br>向更多可能性走去。</h2>
+<div>
+<p id="intro-full">
+</p>
+<p id="about-full">
+</p>
+<div class="traits" id="traits">
+</div>
+</div>
+</section>
+<div class="projects">
+<section class="section" id="work">
+<div class="section-head">
+<h2>把想法做成作品</h2>
+<p>我参与的研究与工程实践</p>
+</div>
+<div id="projects">
+</div>
+</section>
+</div>
+<section class="section learning" id="learning">
+<div>
+<h2>学习，一直在继续</h2>
+<p>打好数理与计算机基础，也在实际项目中不断积累。</p>
+<details class="courses" open>
+<summary>本科课程成绩</summary>
+<div id="courses">
+</div>
+</details>
+<p id="english">英语水平：CET-4</p>
+<p id="academic-honors">河南大学奖学金、三好学生、国家励志奖学金</p>
+</div>
+<div>
+<h2>随身的工具箱</h2>
+<div id="skills">
+</div>
+</div>
+</section>
+<div class="honors">
+<section class="section" id="honors">
+<div class="section-head">
+<h2>努力留下的小小注脚</h2>
+<p>竞赛与荣誉</p>
+</div>
+<div id="recognition">
+</div>
+</section>
+</div>
+<section class="section contact" id="contact">
+<div>
+<h2>有想法，<br>就来聊聊吧。</h2>
+<p>关于研究、代码，或一个值得一起解决的问题。</p>
+</div>
+<div class="contact-info">
+<a href="mailto:xinkai_xinkai@163.com">
+<span>邮箱</span>xinkai_xinkai@163.com</a>
+<a href="https://github.com/xky201225">
+<span>GitHub</span>github.com/xky201225</a>
+<a href="tel:19913626509">
+<span>电话</span>19913626509</a>
+<p>
+<span>QQ</span>2775924927</p>
+</div>
+</section>
+</main>
+<footer>
+<span>© <span id="year">2026</span> 辛凯 Kai Xin</span>
+<span>保持好奇，继续生长。</span>
+</footer>
+<button class="back-top" aria-label="回到顶部" hidden>回到顶部</button>
+</body>
 </html>
